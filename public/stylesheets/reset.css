@@ -1,0 +1,51 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Light;
+    src: url(fonts/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Bold;
+    src: url(fonts/Rubik-Bold.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Light;
+    src: url(fonts/Rubik-Light.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Medium;
+    src: url(fonts/Rubik-Medium.ttf);
+}
+
+@font-face {
+    font-family: Rubik-Regular;
+    src: url(fonts/Rubik-Regular.ttf);
+}
+
+body {
+	overflow-x: hidden;
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul, li {
+	list-style-type: none;
+}
