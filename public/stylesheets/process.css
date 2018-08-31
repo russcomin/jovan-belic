@@ -113,7 +113,7 @@ body {
 	font-size: 13px;
 	color: white;
 	margin-top: 20px;
-	letter-spacing: 1.5px;
+	letter-spacing: 1px;
 	line-height: 260%;
 }
 
@@ -369,7 +369,7 @@ body {
 	font-family: Roboto-Light;
 	font-size: 14px;
 	color: #d6d6d6;
-	letter-spacing: 1.4px;
+	letter-spacing: .7px;
 	line-height: 260%;
 	margin-top: 40px;
 }
@@ -414,8 +414,8 @@ body {
 	font-family: Roboto-Light;
 	color: #c7c7c7;
 	font-size: 13px;
-	letter-spacing: 1.2px;
-	line-height: 250%;
+	letter-spacing: .8px;
+	line-height: 230%;
 }
 
 .sec-cent {

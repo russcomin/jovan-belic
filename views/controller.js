@@ -80,6 +80,7 @@ let close_trigger = document.getElementsByClassName('close-mark')[0];
 		},1400)
 	}
 
+	this.about_m = document.getElementById('about-m').addEventListener('click', about_exe);
 
 	this.proc = document.getElementById("proc-box").addEventListener('click', proc_exe);
 	function proc_exe() {
@@ -106,3 +107,7 @@ let close_trigger = document.getElementsByClassName('close-mark')[0];
 			document.location = "process.html"
 			},1400);
 		}
+
+	this.logo_ex = document.getElementsByClassName('logo-text')[0].addEventListener('click', function() {
+		document.location = "index.html";
+	});

@@ -20,7 +20,7 @@
 				<p class="m-main"><span>02 |</span> Projects</span></p>
 				<p class="box-text">Click to check more of my <br> projects</p>			
 		</div><!-- end mobile-box -->
-		<div class="mobile-box n-box e-box">
+		<div class="mobile-box n-box e-box" id="process-p">
 				<img src="public/images/icons/engineering.svg">
 				<p class="m-main"><span>03 |</span> The Process</span></p>
 				<p class="box-text">Click here to find out how i build things</p>				
@@ -29,12 +29,7 @@
 				<img src="public/images/icons/user.svg">
 				<p class="m-main"><span>04 |</span> About me</span></p>
 				<p class="box-text">Here you can find out more about my life</p>			
-		</div><!-- end mobile-box -->		
-		<div class="mobile-box n-box box-last">
-				<img src="public/images/icons/web-design.svg">
-				<p class="m-main"><span>05 |</span> Services</span></p>
-				<p class="box-text">Click here if you want to<br>know what i do</p>				
-		</div><!-- end mobile-box -->		
+		</div><!-- end mobile-box -->			
 	</div><!-- end menu-mobile -->	
 	<img src="public/images/menu-w.png" id="menu-img">
 	<div class="wrapper">
@@ -49,7 +44,6 @@
 						<li class="nav-comp"><a href="projects.html">PROJECTS</a></li>
 						<li class="nav-comp"><a href="process.html">THE PROCESS</a></li>
 						<li class="nav-comp"><a href="#" id="active">ABOUT ME</a></li>
-						<li class="nav-comp"><a href="#">SERVICES</a></li>
 					</ul><!-- end nav-list -->
 				</div><!-- end nav-bar -->
 			</div><!-- end navigation -->
@@ -62,18 +56,19 @@
 						<div class="story-right animated fadeInRight">
 							<p class="help-text">The beggining</p>
 							<p class="title-text">My Story</p>
-							<p class="text-green">My name is Jovan Belic, date when i saw light for the first <br>
-							time: 15.1.2001. I live in Zabrezje, small city, near Belgrade <br>
-							the capital of Serbia. Im not really focused person, i love <br>
-							doing as much things as i can. I started coding when i was <br>
-							14, i went to a <span>Game Development Workskop</span> and after that <br>
-							i really started to think with my own head. For the first few<br>
-							months i’ve been doing only Game Dev, i used Phaser.IO, <br>
-							amazing Javascript 2D Game Engline. In that time i learned<br>
-							Basic Frontend(<span>HTML, CSS, JS</span>). But it became boring after<br>
-							some time so i wanted to try something new, and i found a<br>
-							Web Design(<span>UI/UX</span>). After that, till this day, im trying to be<br>
-							as better Designer as possible.</p>
+							<p class="text-green">Hy there! Im Jovan Belic, currently Lead Designer at <span>Quarterback</span>. 
+							I was born on 15th January 2001. Spent most of my days so far in
+							Serbia, but i hope this will change in future because i would love
+							to travel and learn from other people and nationalities. I started 
+							with <span>Design&Development</span> 2 years ago and my life really changed
+							since then, actually it's changing on daily bases pretty much! I don't
+							really love to spend a lot of my time in one place and im always
+							trying to find a way to <span>change</span> something in my life. Im not afraid of
+							making decisions, even if some of decisions are wrong they still keep 
+							me going and not staying in one place forver. Currently im really into
+							<span>Product Design</span> and im having great time working with the team at QB.
+							In my free time i like to work on side projects and on my skills in
+							general, this is very important for self-growth! </p>
 							<button id="download">DOWNLOAD CV</button>
 						</div><!-- end story-right -->
 					</div><!-- end my-story -->
@@ -124,11 +119,18 @@
 			</div><!-- end hero -->
 		</div><!-- end header -->
 	</div><!-- end wrapper -->
+	<script src="views/go_home.js"></script>
 	<script type="text/javascript">
 		let home_p = document.getElementById('home-p')
 			home_p.addEventListener('click', function() {
 			document.location = "index.html";
 		})
+
+		let process_p = document.getElementById('process-p')
+			process_p.addEventListener('click', function() {
+			document.location = "process.html";
+		});	
+
 		let menu_hamb = document.getElementById('menu-img').addEventListener('click', menuMobile);
 		let close_mobile = document.getElementById('close_mobile').addEventListener('click', closeMobile);
 		let menu_mobile = document.getElementById('menu-mobile');
@@ -151,6 +153,9 @@
 			menu_mobile.style.transition = ".4s";
 			menu_mobile.style.left = "-100%";		
 		}
+
+		this.download = document.getElementById('download');
+		this.download.addEventListener('click', function() { document.location = "https://www.linkedin.com/in/jovan-belic/" })
 	</script>
 </body>
 </html>

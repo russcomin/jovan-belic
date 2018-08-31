@@ -49,3 +49,7 @@ a {
 ul, li {
 	list-style-type: none;
 }
+
+.logo-text {
+    cursor: pointer;
+}

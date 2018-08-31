@@ -132,8 +132,8 @@ body {
 	font-family: Roboto-Light;
 	font-size: 12px;
 	color: white;
-	letter-spacing: 1.4px;
-	line-height: 270%;
+	letter-spacing: 1px;
+	line-height: 230%;
 	font-weight: 500;
 	margin-left: 90px;
 	margin-top: 50px;
@@ -220,8 +220,8 @@ body {
 	font-family: Roboto-Regular;
 	margin-left: 67px;
 	margin-top: 25px;
-	letter-spacing: 1px;
-	line-height: 240%;
+	letter-spacing: .7px;
+	line-height: 220%;
 }
 
 .goals {

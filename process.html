@@ -25,15 +25,10 @@
 				<p class="m-main mobile-active"><span>03 |</span> The Process</span></p>
 				<p class="box-text">Click here to find out how i build things</p>				
 		</div><!-- end mobile-box -->
-		<div class="mobile-box n-box">
+		<div class="mobile-box n-box" id="about-p">
 				<img src="public/images/icons/user.svg">
 				<p class="m-main"><span>04 |</span> About me</span></p>
 				<p class="box-text">Here you can find out more about my life</p>			
-		</div><!-- end mobile-box -->		
-		<div class="mobile-box n-box box-last">
-				<img src="public/images/icons/web-design.svg">
-				<p class="m-main"><span>05 |</span> Services</span></p>
-				<p class="box-text">Click here if you want to<br>know what i do</p>				
 		</div><!-- end mobile-box -->		
 	</div><!-- end menu-mobile -->	
 	<img src="public/images/menu-w.png" id="menu-img">
@@ -49,7 +44,6 @@
 						<li class="nav-comp"><a href="projects.html">PROJECTS</a></li>
 						<li class="nav-comp"><a href="#" id="active">THE PROCESS</a></li>
 						<li class="nav-comp"><a href="about.html">ABOUT ME</a></li>
-						<li class="nav-comp"><a href="#">SERVICES</a></li>
 					</ul><!-- end nav-list -->
 				</div><!-- end nav-bar -->
 			</div><!-- end navigation -->
@@ -111,11 +105,11 @@
 						<div class="sec-two">
 							<img src="public/images/illustrations/illustration-1.png" class="l-fix">
 							<p class="illust-title l-fix">Userstories</p>
-							<p class="illust-text l-fix">Brainstorming is really fun and non-linear process for me, im <br>
-							trying to force myself to think about something from as much <br>
-							perspectives as possible. Also im putting everything on paper, <br>
-							so i can compare all solutions at the end when i need to choose
-							only one.</p>						
+							<p class="illust-text l-fix">I really love to write/create userstories. I belive that by writing<br>
+								userstories you force your brain to think about one thing from <br> 
+							    different angles. I think im still learning this technique but anyway <br>
+							    im using it everyday and by that im trying to train my mind to do this <br> 
+								automaticlly</p>						
 						</div><!-- end sec-two -->						
 					</div><!-- end two-sections -->
 				</div><!-- end first-step -->
@@ -148,8 +142,8 @@
 					<div class="step-header">
 						<p class="step-number">03</p>
 						<p class="step-title">Lo-Fi & Hi-Fi / <span>Doing</span></p>
-						<p class="step-text">A bit more fun part but much more challenging. Now i have defined goal and idea and its time <br>
-						to do something with that. In this step im making sure that my idea actaully make any sense.</p>
+						<p class="step-text">And of course here we are! Everything is ready to become alive, and i love to add life into everything. However this <br>
+						is not my favorite part of the process, after so much work and love putted into project/product everything is comming to an end.</p>
 					</div><!-- end step-header -->
 					<div class="two-sections">
 						<div class="sec-one sec-cent">
@@ -185,6 +179,7 @@
 			</div><!-- end contact -->					
 		</div><!-- end process-wrapper -->
 	</div><!-- end wrapper -->
+	<script src="views/go_home.js"></script>
 	<script type="text/javascript">
 		let home_p = document.getElementById('home-p')
 			home_p.addEventListener('click', function() {
@@ -212,6 +207,11 @@
 			menu_mobile.style.transition = ".4s";
 			menu_mobile.style.left = "-100%";		
 		}
+
+		let about_p = document.getElementById('about-p')
+			about_p.addEventListener('click', function() {
+			document.location = "about.html";
+		});	
 	</script>
 </body>
 </html>
